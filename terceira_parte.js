@@ -20,6 +20,18 @@ function chamadaComThenCatch(){
 
 chamadaComThenCatch()
 
+async function chamadaComAsyncAwait(){
+  const f1 = await fatorial(5)
+  console.log(f1)
+  try{
+    const f2 = await fatorial(-1)
+    console.log(f2)
+  }
+  catch(e){
+    console.log(e)
+  }
+}
+
 
 // async function hello(nome){
 //   return "Oi, " + nome
